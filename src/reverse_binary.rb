@@ -1,4 +1,9 @@
-class BinaryNumbers
+# Task
+# Your task will be to write a program for reversing numbers in binary.
+# For instance, the binary representation of 13 is 1101, and reversing it
+# gives 1011, which corresponds to number 11.
+
+class ReverseBinary
   class << self
 
     def convert(num)
@@ -25,6 +30,10 @@ class BinaryNumbers
         num = num - (10 ** (num.to_s.size-1))
       end
       dec
+    end
+
+    def run
+      p convert(ARGV[0].to_i)
     end
 
   end
