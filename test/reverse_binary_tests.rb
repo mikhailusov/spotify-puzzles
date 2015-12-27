@@ -24,6 +24,9 @@ require_relative '../src/reverse_binary'
 
 class TestReverseBinary < Minitest::Test
   def test_numbers
+    assert_equal 1, ReverseBinary::convert(1)
+    assert_equal 1, ReverseBinary::convert(2)
+    assert_equal 3, ReverseBinary::convert(6)
     assert_equal 11, ReverseBinary::convert(13)
     assert_equal 61, ReverseBinary::convert(47)
     assert_equal 1, ReverseBinary::convert(1024)
