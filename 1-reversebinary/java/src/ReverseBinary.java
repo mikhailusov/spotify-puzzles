@@ -1,22 +1,20 @@
 package src;
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
+import java.util.*;
 
 public class ReverseBinary {
 
   public static void main(String[] args){
-
-    BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+    Scanner in = new Scanner(System.in);
     int num;
-    System.out.print("Enter Integer: ");
+
     try {
-      num = Integer.parseInt(br.readLine());
+      num = in.nextInt();
     } catch (Exception e) {
       System.out.println("Invalid input");
       return;
     }
+
     ReverseBinary.run(num);
   }
 
