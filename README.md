@@ -56,8 +56,8 @@ The first line of input contains two integers n and m (1 ≤ n ≤ 50000, 1 ≤ 
 Output
 Output a list of the m songs with the highest quality qi, in decreasing order of quality. If two songs have the same quality, give precedence to the one appearing first on the album (presumably there was a reason for the producers to put that song before the other).
 
+**Sample input 1**
 ```
-Sample input 1
 4 2
 30 one
 30 two
@@ -84,8 +84,8 @@ Sample input 2
 11272 slow_country
 10521 m1_a1
 ```
+**Sample output 2**
 ```
-Sample output 2
 19_2000
 clint_eastwood
 tomorrow_comes_today
@@ -107,20 +107,20 @@ The input contains a single line with an integer N, 1 ≤ N ≤ 1000000000.
 Output
 Output one line with one integer, the number we get by reversing the binary representation of N.
 
+**Sample input 1**
 ```
-Sample input 1
 13
 ```
+**Sample output 1**
 ```
-Sample output 1
 11
 ```
+**Sample input 2**
 ```
-Sample input 2
 47
 ```
+**Sample output 2**
 ```
-Sample output 2
 61
 ```
 
