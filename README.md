@@ -1,10 +1,10 @@
-# spotify-puzzles
+spotify-puzzles
+======
 :white_check_mark: Spotify labs puzzles solutions from https://labs.spotify.com/puzzles/
 
-# 1. Cat vs. Dog (Difficulty Level: Hard)
+## 1. Cat vs. Dog (Difficulty Level: Hard)
 Problem ID: catvsdog
 
-images
 The latest reality show has hit the TV: “Cat vs. Dog”. In this show, a bunch of cats and dogs compete for the very prestigious Best Pet Ever title. In each episode, the cats and dogs get to show themselves off, after which the viewers vote on which pets should stay and which should be forced to leave the show.
 
 Each viewer gets to cast a vote on two things: one pet which should be kept on the show, and one pet which should be thrown out. Also, based on the universal fact that everyone is either a cat lover (i.e. a dog hater) or a dog lover (i.e. a cat hater), it has been decided that each vote must name exactly one cat and exactly one dog.
@@ -21,6 +21,7 @@ Per testcase:
 
 One line with the maximum possible number of satisfied voters for the show.
 Sample input 1
+```
 2
 1 1 2
 C1 D1
@@ -30,12 +31,14 @@ C1 D1
 C1 D1
 C1 D2
 D2 C1
+```
 Sample output 1
+```
 1
 3
+```
 
-
-# 2. Zipf’s Song (Difficulty Level: Medium)
+## 2. Zipf’s Song (Difficulty Level: Medium)
 Problem ID: zipfsong
 6881113-green-music-theme-with-various-notes
 Your slightly pointy-bearded boss has assigned you to write software to find the best songs from different music albums. And the software should be finished in an hour. But don’t panic, you don’t have to solve the problem of writing an AI with good taste. At your disposal is the impeccable taste of a vast horde of long-tailed monkeys. Well, at least almost. The monkeys are not very communicative (or rather, you’re not sure which song “Ook!” is supposed to refer to) so you can’t ask them which songs are the best. What you can do however is to look at which songs the monkeys have listened to and use this information to deduce which songs are the best.
@@ -53,6 +56,7 @@ Output
 Output a list of the m songs with the highest quality qi, in decreasing order of quality. If two songs have the same quality, give precedence to the one appearing first on the album (presumably there was a reason for the producers to put that song before the other).
 
 Sample input 1
+```
 4 2
 30 one
 30 two
@@ -78,13 +82,15 @@ Sample input 2
 12139 starshine
 11272 slow_country
 10521 m1_a1
+```
 Sample output 2
+```
 19_2000
 clint_eastwood
 tomorrow_comes_today
+```
 
-
-# 3. Reversed Binary Numbers (Difficulty Level: Easy)
+## 3. Reversed Binary Numbers (Difficulty Level: Easy)
 ProblemID: Reversebinary
 
 stock-footage-abstract-cgi-motion-graphics-and-animated-background-with-binary-numbers
@@ -101,13 +107,13 @@ Output
 Output one line with one integer, the number we get by reversing the binary representation of N.
 
 Sample input 1
-13
+```13```
 Sample output 1
-11
+```11```
 Sample input 2
-47
+```47```
 Sample output 2
-61
+```61```
 
 How to Submit Your Solution
 To submit a solution to a problem, send an email to Puzzle@spotify.com. Include all your source code files as attachments and the problem ID or problem name as subject. Within minutes you will get a reply indicating whether your source code solved the problem, and if it didn’t, an indication of what was wrong. Your source code can be in C, C++, Java or Python (version 2.6). Input is read from stdin.
