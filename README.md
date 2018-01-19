@@ -41,7 +41,7 @@ D2 C1
 
 ## 2. Zipf’s Song (Difficulty Level: Medium)
 Problem ID: zipfsong
-6881113-green-music-theme-with-various-notes
+
 Your slightly pointy-bearded boss has assigned you to write software to find the best songs from different music albums. And the software should be finished in an hour. But don’t panic, you don’t have to solve the problem of writing an AI with good taste. At your disposal is the impeccable taste of a vast horde of long-tailed monkeys. Well, at least almost. The monkeys are not very communicative (or rather, you’re not sure which song “Ook!” is supposed to refer to) so you can’t ask them which songs are the best. What you can do however is to look at which songs the monkeys have listened to and use this information to deduce which songs are the best.
 
 At first, you figure that the most listened to songs must be the best songs. However, you quickly realize that this approach is flawed. Even if all songs of the album are equally good, the early songs are more likely to be listened to more often than the later ones, because monkeys will tend to start listening to the first song, listen for a few songs and then, when their fickle ears start craving something else, stop listening. Instead, if all songs are equal, you expect that their play frequencies should follow Zipf’s Law.
@@ -63,10 +63,14 @@ Output a list of the m songs with the highest quality qi, in decreasing order of
 30 two
 15 three
 25 four
-Sample output 1
+```
+**Sample output 1**
+```
 four
 two
-Sample input 2
+```
+**Sample input 2**
+```
 15 3
 197812 re_hash
 78906 5_4
@@ -93,8 +97,6 @@ tomorrow_comes_today
 
 ## 3. Reversed Binary Numbers (Difficulty Level: Easy)
 ProblemID: Reversebinary
-
-stock-footage-abstract-cgi-motion-graphics-and-animated-background-with-binary-numbers
 
 Yi has moved to Sweden and now goes to school here. The first years of schooling she got in China, and the curricula do not match completely in the two countries. Yi likes mathematics, but now… The teacher explains the algorithm for subtraction on the board, and Yi is bored. Maybe it is possible to perform the same calculations on the numbers corresponding to the reversed binary representations of the numbers on the board? Yi dreams away and starts constructing a program that reverses the binary representation, in her mind. As soon as the lecture ends, she will go home and write it on her computer.
 
