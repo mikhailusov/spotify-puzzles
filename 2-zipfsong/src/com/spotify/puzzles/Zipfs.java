@@ -24,10 +24,9 @@ public class Zipfs {
     }
 
     public static List<Song> zipfsSort(List<Song> songs, int limit) {
-        List<Song> sortedSongs = new LinkedList<>(songs);
         Comparator<Song> byZipfs = Comparator.comparing(song -> song.getZipfsScore(), Comparator.reverseOrder());
         Comparator<Song> byPosition = Comparator.comparing(song -> song.getPosition());
-        return sortedSongs.stream().sorted(byZipfs.thenComparing(byPosition)).limit(limit).collect(toList());
+        return songs.stream().sorted(byZipfs.thenComparing(byPosition)).limit(limit).collect(toList());
     }
 
     private static Album getAlbumFromInput() {
