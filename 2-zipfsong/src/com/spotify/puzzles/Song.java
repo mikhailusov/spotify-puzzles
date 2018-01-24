@@ -1,3 +1,11 @@
+/**
+ * 2018 Mikhail Usov <musovx@gmail.com>
+ *
+ * For Spotify with <3
+ *
+ * Zipf’s Song
+ */
+
 package com.spotify.puzzles;
 
 public class Song {
@@ -25,16 +33,5 @@ public class Song {
 
     public int getZipfsScore() {
         return zipfsScore;
-    }
-
-    @Override
-    public String toString() {
-        return "Song{" +
-                "position=" + position +
-                ", title='" + title + '\'' +
-                ", playsCount=" + playsCount +
-                ", zipfsCount=" + zipfsCount +
-                ", zipfsScore=" + zipfsScore +
-                '}';
     }
 }

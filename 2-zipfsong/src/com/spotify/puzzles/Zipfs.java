@@ -1,3 +1,11 @@
+/**
+ * 2018 Mikhail Usov <musovx@gmail.com>
+ *
+ * For Spotify with <3
+ *
+ * Zipf’s Song
+ */
+
 package com.spotify.puzzles;
 
 import java.util.Comparator;
@@ -7,12 +15,9 @@ import java.util.Scanner;
 import static java.util.stream.Collectors.toList;
 
 public class Zipfs {
-
     private static int limit = 0;
 
     public static void main(String[] args) {
-
-        // Get album from input
         Album album = getAlbumFromInput();
         printTitles(zipfsSort(album.getSongs(), limit));
 
@@ -27,7 +32,6 @@ public class Zipfs {
 
     private static Album getAlbumFromInput() {
         List<Song> songs = new LinkedList<>();
-
         try {
             Scanner in = new Scanner(System.in);
             int c = in.nextInt();
@@ -35,16 +39,20 @@ public class Zipfs {
 
             in.nextLine();
 
-            int f = 1;
+            int firstSongPlaysCount = 0;
 
             for (int i = 1; i <= c; i++) {
                 String s = in.nextLine();
                 int plays = Integer.parseInt(s.split(" ")[0]);
                 String title = s.split(" ")[1];
+
                 if (i == 1) {
-                    f = plays;
+                    firstSongPlaysCount = plays;
                 }
-                Song song = new Song(i, title, plays, f / i);
+
+                int zipfsCount = firstSongPlaysCount / i;
+
+                Song song = new Song(i, title, plays, zipfsCount);
                 songs.add(song);
             }
 
@@ -52,9 +60,7 @@ public class Zipfs {
             throw new IllegalArgumentException("Wrong input format: " + e.getMessage());
         }
 
-        Album album = new Album(songs);
-
-        return album;
+        return new Album(songs);
     }
 
     private static void printTitles(List<Song> songs) {
