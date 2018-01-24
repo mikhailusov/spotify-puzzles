@@ -1,4 +1,4 @@
-package src;
+package com.spotify.puzzles;
 
 import java.util.*;
 
