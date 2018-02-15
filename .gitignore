@@ -1,2 +1,6 @@
 *.class
 .idea
+*.iml
+.gradle
+build
+out

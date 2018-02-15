@@ -15,10 +15,11 @@ import java.util.Scanner;
 import static java.util.stream.Collectors.toList;
 
 public class Zipfs {
+
     private static int limit = 0;
 
     public static void main(String[] args) {
-        Album album = getAlbumFromInput();
+        Album album = getAlbumFromInput(new Scanner(System.in));
         printTitles(zipfsSort(album.getSongs(), limit));
 
     }
@@ -29,10 +30,9 @@ public class Zipfs {
         return songs.stream().sorted(byZipfs.thenComparing(byPosition)).limit(limit).collect(toList());
     }
 
-    private static Album getAlbumFromInput() {
+    protected static Album getAlbumFromInput(Scanner in) {
         List<Song> songs = new LinkedList<>();
         try {
-            Scanner in = new Scanner(System.in);
             int c = in.nextInt();
             limit = in.nextInt();
 

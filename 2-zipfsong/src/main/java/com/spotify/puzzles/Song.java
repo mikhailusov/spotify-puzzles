@@ -23,6 +23,10 @@ public class Song {
         this.zipfsScore = playsCount - zipfsCount;
     }
 
+    public Song(String title) {
+        this.title = title;
+    }
+
     public int getPosition() {
         return position;
     }
