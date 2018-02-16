@@ -126,5 +126,5 @@ Output one line with one integer, the number we get by reversing the binary repr
 61
 ```
 
-How to Submit Your Solution
+### How to Submit Your Solution
 To submit a solution to a problem, send an email to Puzzle@spotify.com. Include all your source code files as attachments and the problem ID or problem name as subject. Within minutes you will get a reply indicating whether your source code solved the problem, and if it didn’t, an indication of what was wrong. Your source code can be in C, C++, Java or Python (version 2.6). Input is read from stdin.
